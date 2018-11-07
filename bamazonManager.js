@@ -17,8 +17,6 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
     if (err) throw err;
-    // connection.end();   
-
 });
 
 
@@ -66,7 +64,6 @@ function managerMainPage() {
                     table.push(
                         [res[i].item_id,res[i].product_name,res[i].stock_quantity]
                     )
-                    // console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].stock_quantity)
                 }
                 console.log(table.toString());
                 console.log('\n')
@@ -75,7 +72,7 @@ function managerMainPage() {
 
 
         }
-        else if (answer.mainMenu === 'Add a new product') {
+        else if (answer.mainMenu === 'Add a new Product') {
             inquirer.prompt([{
                 type: 'input',
                 name: 'itemToAddName',
