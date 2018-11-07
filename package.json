@@ -1,0 +1,19 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon app",
+  "main": "bamazonCustomers.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "mike",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "cli-table": "^0.3.1",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0",
+    "promise-mysql": "^3.3.1",
+    "util": "^0.11.1"
+  }
+}
